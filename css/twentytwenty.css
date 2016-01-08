@@ -80,6 +80,9 @@
   box-sizing: content-box;
   z-index: 0;
   overflow: hidden;
+  width: 100%;
+  margin-left:auto;
+  margin-right: auto;
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none; }
@@ -121,18 +124,7 @@
 .twentytwenty-vertical .twentytwenty-after-label:before {
   bottom: 10px; }
 
-.twentytwenty-overlay {
-  -webkit-transition-property: background;
-  -moz-transition-property: background;
-  transition-property: background;
-  background: rgba(0, 0, 0, 0);
-  z-index: 25; }
-  .twentytwenty-overlay:hover {
-    background: rgba(0, 0, 0, 0.5); }
-    .twentytwenty-overlay:hover .twentytwenty-after-label {
-      opacity: 1; }
-    .twentytwenty-overlay:hover .twentytwenty-before-label {
-      opacity: 1; }
+
 
 .twentytwenty-before {
   z-index: 20; }
