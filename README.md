@@ -1,3 +1,7 @@
+## Changes
+
+I've removed the overlay from the original library, which I found got in the way and was a bit obtrusive. In addition, I allowed for multiple images on the same page to resize independently. They will automatically center within their container and resize when they fill the container.
+
 ## Basic usage
 
 Include the javascript and css files.
@@ -7,7 +11,7 @@ Include the javascript and css files.
 <script src="js/jquery.event.move.js" type="text/javascript"></script>
 <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
 <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
-``` 
+```
 You might need to change the paths to match your setup.
 
 
@@ -42,19 +46,6 @@ $(window).load(function(){
 });
 ```
 
-### Prevent FOUC
-
-If you want to avoid a [FOUC](http://en.wikipedia.org/wiki/Flash_of_unstyled_content) you can append the `twentytwenty-container` class to your container like so:
-
-```html
-<div id="container1" class="twentytwenty-container">
- <!-- The before image is first -->
- <img src="http://placehold.it/400x200&text=1" />
- <!-- The after image is last -->
- <img src="http://placehold.it/400x200&text=2" />
-</div>
-```
-
 ### Multiple instances
 
 If you want to use multiple instances of this plugin on a single page you can target the container class:
@@ -65,26 +56,13 @@ $(window).load(function(){
 });
 ```
 
-# Compass Quickstart
-
-Run the following commands to get up and running quickly:
-
-```bash
-git clone git@github.com:zurb/compareit.git ~/Sites/compareit
-cd compareit
-bundle install
-bundle exec compass compile
-```
-
-All default [Sass](http://sass-lang.com/) variables can be found in `scss/twentytwenty.scss`.
-
 ## Support
 
 - IE8+
 - Firefox (latest)
 - Chrome
 - Safari
-- Android 
+- Android
 - iOS (iPhone, iPad)
 
 ## Dependencies
